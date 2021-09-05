@@ -97,3 +97,11 @@ const { myName, age }: { myName: string; age: number } = profile;
 const {
   coords: { lat, long },
 }: { coords: { lat: number; long: number } } = profile;
+
+//tuples
+
+const drink = { color: 'black', carbonated: true, price: 40 };
+
+type Drink = [string, boolean, number];
+
+const pepsi: Drink = ['green', false, 20];
